@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    background-color: #ced1fa;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blanchedalmond; */
+    position: relative;
+    max-width: 71em;
+    width: 100%;
+    min-height: 48rem;
+    border-radius: 33px;
+
+}
+
+.leftDiv {
+    flex: 1 1 200px;
+    background-image: linear-gradient(#33086783, #30d0d083);
+    width: 32rem;
+    /* min-height: 42rem; */
+    border-radius: 2rem;
+    position: absolute;
+    left: 0%;
+    z-index: 2;
+    background-image: url("https://images.unsplash.com/photo-1454789476662-53eb23ba5907?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MTMzOTV8MHwxfHNlYXJjaHwxfHx3ZWF0aGVyfGVufDB8fHx8MTY3NzYxNDkzMQ&ixlib=rb-4.0.3&q=80&w=1080");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0.25rem 0.25rem 3rem rgb(0 0 0 / 51%);
+}
+
+.leftBackground {
+    background-image: linear-gradient(#33086783, #30d0d083);
+    padding: 40px;
+    padding-left: 67px;
+    border-radius: 2rem;
+    min-height: 50rem;
+}
+
+.menu {
+    color: white;
+    position: absolute;
+    right: 7%;
+    font-size: 35px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.time {
+    font-size: 86px;
+    margin-bottom: 12px;
+}
+
+.pmam {
+    margin-left: 18px;
+    font-size: 38px;
+}
+
+.week {
+    /* background-color: red; */
+    font-size: 65px;
+    font-weight: bold;
+    margin-top: 17px;
+}
+
+.date {
+    font-size: 39px;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 13px;
+    /* background-color: orange; */
+}
+
+.locationDiv {
+    display: flex;
+    margin-top: 44px;
+    /* background-color: yellow; */
+}
+
+.locatIcon {
+    font-size: 36px;
+}
+
+.location {
+    font-size: 42px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+.descripDiv {
+    display: flex;
+    align-items: center;
+}
+
+.temp {
+    font-size: 117px;
+    font-weight: bold;
+    /* background-color: blue; */
+}
+
+.description {
+    font-size: 31px;
+    /* background-color: purple; */
+    font-weight: 600;
+}
+
+.time,
+.pmam,
+.week,
+.date,
+.locationDiv,
+.weatherIcon,
+.temp,
+.description {
+    color: white;
+}
+
+.rightDiv {
+    position: relative;
+    background-image: linear-gradient(#614385,
+            #516395);
+    width: 40rem;
+    min-height: 48rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    position: absolute;
+    right: 0%;
+    z-index: 1;
+
+    padding: 20px 55px;
+    box-shadow: 2px 2px 15px rgba(62, 20, 68, 0.342);
+    /* display: none; */
+}
+
+.temDetail {
+    font-size: 12px;
+    margin-left: 16px;
+}
+
+.rightTopDiv {
+    margin-bottom: 40px;
+    border-top-right-radius: 2rem;
+    /* height: 165px; */
+    /* background-color: red; */
+}
+
+.ridgtCenterDiv {
+    padding: 20px 59px 20px 67px;
+    /* background-color: aqua; */
+}
+
+.rightBottomDiv {
+    /* background-color: #2d2e3b; */
+    position: relative;
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.search {
+
+    outline: none;
+    width: 300px;
+    height: 45px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.151);
+    box-shadow: 2px 2px 15px rgba(62, 20, 68, 0.342);
+}
+
+.errTap {
+    position: absolute;
+    top: -62%;
+    left: 2%;
+    padding: 2px 4px;
+    color: rgb(221 215 215);
+    visibility: hidden
+}
+
+textarea:focus,
+input:focus {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+::placeholder {
+    color: rgb(221, 215, 215);
+    font-size: 20px;
+}
+
+.earthIcon {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(#8BC6EC, #9599E2);
+    margin-left: 8px;
+    font-size: 38px;
+}
+
+.conditionDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 14rem;
+    color: white;
+    font-size: 19px;
+    margin-top: 8px;
+}
+
+.condition {
+    visibility: hidden;
+}
+
+.dayDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 28px;
+}
+
+.temConDiv {
+    display: flex;
+}
+
+.dayIcon {
+    margin-left: 17px;
+}
