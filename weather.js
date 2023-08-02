@@ -1,5 +1,5 @@
-const apiKey = "979f69fe29c91663dbe2dff7f27a1fca";
-const assessKey = "WqBJrxXa3uxSi1JKrBB2d4JDTDtqkqe0wu7uA6zRWpo";
+const apiKey = process.env.OPEN_WEATHER_API;
+const assessKey = process.env.UNSPLASH_API;
 
 const search = document.querySelector(".search");
 search.addEventListener("keypress", function (e) {
