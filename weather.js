@@ -1,5 +1,8 @@
-const apiKey = process.env.OPEN_WEATHER_API;
-const assessKey = process.env.UNSPLASH_API;
+import { API_KEYS } from "./apikey";
+
+const apiKey = API_KEYS.WEATHER_API_KEY;
+const assessKey = API_KEYS.UNSPLASH_API_KEY;
+const openCageAPI = API_KEYS.OPENCAGE_API_KEY;
 
 const search = document.querySelector(".search");
 search.addEventListener("keypress", function (e) {
@@ -124,7 +127,7 @@ function displayWeather(data) {
 
 function success(data) {
   //openCage將latitude,longitude吸 reverse to 地址
-  var api_key = "df13556b935d4606a1f3a28f779d9f52";
+  var api_key = openCageAPI;
   var latitude = data.coords.latitude;
   var longitude = data.coords.longitude;
   var api_url = "https://api.opencagedata.com/geocode/v1/json";
