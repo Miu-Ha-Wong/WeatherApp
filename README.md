@@ -37,36 +37,6 @@ Link: https://cat-store-ecommerce.netlify.app/
 
 
 
-## Getting Started
-
-
-1. Clone the Cat-Store project to your local environment:
-   
-  ```bash
-  git clone https://github.com/your-username/your-repo.git
-  ```
-
-
-2. Install the required dependencies:
-   
-  ```bash
-  npm install
-  ```
-
-
-3. Run the project:
-   
-  ```bash
-  npm start
-  ```
-
-
-4. Open your web browser and go to http://localhost:3000 to start enjoying the shopping experience!
-
-
-Please update "your-username" and "your-repo" with your project's actual GitHub username and repository name.
-
-
 
 ## Contact Information
 
